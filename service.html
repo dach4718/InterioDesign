@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interio Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navlinks"> 
+                <i class="fa fa-times" onclick="hideMenu()" >
+                </i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu" >
+            </i>
+        </nav>
+        <h1>Our Services</h1>
+
+    </section>
+
+<!------services----->
+<section class="services">
+    <h1>Services We Can Offer</h1>
+    <div class="row">
+        <div class="services-col">
+            <img src="images/sp.jpg">
+            <h3>Space Planning</h3>
+            <p> Interior designers are skilled in optimizing the use of space within a given area. They consider the layout and flow of a space to ensure that it meets the functional requirements of the occupants.
+
+            </p>
+        </div>
+        <div class="services-col">
+            <img src="images/sus.jpg">
+            <h3>Sustainble Design</h3>
+            <p> With a growing emphasis on environmental sustainability, many interior designers are incorporating eco-friendly practices and materials into their designs. This may involve using recycled materials, energy-efficient fixtures, and sustainable building practices.
+
+            </p>
+
+        </div>
+        <div class="services-col">
+            <img src="images/aes.jpg">
+            <h3>Aesthetics</h3>
+            <p>Creating visually appealing interiors is a fundamental aspect of interior design. This involves selecting colors, textures, materials, and furnishings that harmonize with each other and the overall design concept.
+
+            </p>
+        </div>
+        <div class="services-col">
+            <img src="images/fur.jpg">
+            <h3>Furniture and Fixture Selection</h3>
+            <p> Interior designers choose furniture and fixtures that complement the design concept and serve the functional needs of the space. This includes selecting items such as sofas, tables, lighting fixtures, and cabinetry.
+
+            </p>
+        </div>
+        <div class="services-col">
+            <img src="images/cnl.jpg">
+            <h3>Color and Lighting</h3>
+            <p>The choice of color schemes and lighting can greatly influence the atmosphere of a space. Interior designers use their knowledge of color theory and lighting principles to create moods ranging from cozy and intimate to bright and energetic.
+                
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<!--------javascript for toggle menu------->
+    <script>
+
+        var navlinks = document.getElementById("navlinks")
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+        
+    
+    
+</body>
+</html>
